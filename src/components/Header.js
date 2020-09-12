@@ -14,19 +14,19 @@ function Header() {
         <SearchIcon className='header__searchIcon' />
       </div>
       <div className="header__nav">
-        <Link className='header__link'>
+        <Link to='/login' className='header__link'>
           <div className="header__option">
             <span className='header__optionLineOne'>Hello, Yemi</span>
             <span className='header__optionLineTwo'>Sign in</span>
           </div>
         </Link>
-        <Link className='header__link'>
+        <Link to='/inventory' className='header__link'>
           <div className="header__option">
             <span className='header__optionLineOne'>Returns</span>
             <span className='header__optionLinetTwo'>& order</span>
           </div>
         </Link>
-        <Link className='header__link'>
+        <Link to='checkout' className='header__link'>
           <div className="header__option">
             <span className='header__optionLineOne'>Your</span>
             <span className='header__optionLineTwo'>Prime</span>
