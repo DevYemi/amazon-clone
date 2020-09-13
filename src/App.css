@@ -52,6 +52,12 @@
   display: flex;
   flex-direction: column;
   margin: 0 10px;
+  padding: 6px;
+}
+.header__option:hover, .header__optionBasket:hover {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
 }
 .header__optionLineOne {
   font-size: 10px;
@@ -62,6 +68,7 @@
 }
 .header__optionBasket{
   display: flex;
+  padding: 6px;
 }
 .header__basketCount {
   margin: 0 10px;
@@ -103,7 +110,10 @@
 }
 .product > button {
   background-color: #f0c14b;
-  border-color: #a88734 #9c7e31 #846a29;
+  border-color: #a88734 #999790 #846a29;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 3px;
 }
 .product__price {
   margin-top: 5px;
@@ -112,6 +122,82 @@
   height: 200px;
   object-fit: contain;
   margin-bottom: 15px;
+}
+
+/* CHECKOUT STYLE */
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+}
+.checkout__ad {
+  width: 100%;
+  margin: 10px 0;
+}
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.checkout__column1 {
+  flex: 1;
+}
+/* CHECKOUTPRODUCT STYLE */
+.checkoutProduct {
+  display: flex;
+  margin: 20px 0;
+}
+.checkoutProduct__img {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+.checkoutProduct__info {
+  padding-left: 20px;
+}
+.checkoutProduct__title {
+  font-size: 18px;
+  font-weight: 800;
+}
+.checkoutProduct__info > button {
+  background-color: #f0c14b;
+  border-radius: 3px;
+  padding: 3px;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* SUBTOTAL STYLES */
+.subtotal{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  
+}
+.subtotal > button {
+  background-color: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  padding: 3px;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+.subtotal__gift {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.subtotal__gift > input {
+  margin-right: 5px;
 }
 
 
