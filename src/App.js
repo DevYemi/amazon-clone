@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header'
+import Footer from './components/footer'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Checkout from './components/Checkout'
@@ -36,10 +37,12 @@ function App() {
           <Route path='/home'>
             <Header />
             <Home />
+            <Footer />
           </Route>
           <Route path='/checkout'>
             <Header />
             <Checkout />
+            <Footer />
           </Route>
           <Route path='/login'>
           <Login />
@@ -47,10 +50,12 @@ function App() {
           <Route path='/inventory'>
             <Header />
             <h1>INVENTORY PAGE</h1>
+            <Footer />
           </Route>
           <Route path='/'>
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </div>
